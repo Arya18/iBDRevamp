@@ -1,0 +1,176 @@
+.certificates{
+    padding: 0px 0px 0px 40px;
+}
+.certificates-bg{
+    background: url(https://d3u8ldawoq7n0v.cloudfront.net/public/local-cdn/images/home-footer-sprt.png) no-repeat scroll 0 0;
+}
+.iso27001{
+    background-position: -351px -69px;
+    width: 85px;
+    height: 51px
+}
+.microsoft{
+    background-position:-76px 0;
+    width: 127px;
+    height: 47px;
+}
+.nasscom{
+    background-position: -300px 0;
+    width: 130px;
+    height: 50px;
+}
+.division{
+    border-top: 0.5px solid white;
+    width: 94px;
+    float: left
+}
+.footer-contact{
+    display: inline-block;
+}
+.contact-page::before, .inner-page-about-us::before {
+    background-image: none !important;
+    content: "Get Quote";
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: #f0f0f0;
+    top: 219px;
+    font-size: 190px;
+    font-family: 'open_sansextrabold';
+    text-align: center;
+}
+.inner-page-about-us::before {
+    content: "Our Vision";
+    top: 600;
+}
+.about-us-get-quote::after{
+    content: none !important;   
+}
+.contact-page .inner-page-banner::after, {
+ content: none !important;
+}
+.section-padding{
+    padding: 10rem 0 3.5rem;
+}
+.quote-text{
+    font-weight: 700;
+    color:#000 !important;
+}
+.quote-text span{
+    color: #ff7cb0 !important;
+}
+.page-wrapper::before{
+    content: none !important;
+}
+.about-us .banner-content{
+    padding:0px 0px 0px 100px;
+}
+.about-us .section-padding{
+padding: 10rem 96px 3.5rem;
+}
+.doodle {
+    position: fixed;
+    z-index: -1;
+}
+.inner-page-about-us .counter-value{
+    font-size: 400px;
+    position: relative;
+    top: 85;
+    font-weight: 400;
+    background: -webkit-linear-gradient(-62deg,#4e4b8f,#756aee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.about-us-heading{
+    color: #151515;
+    font-weight: 500;
+}
+.yearExperience::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 90px;
+    width: 4px;
+    background: #d7d7d7;
+}
+.touchButton{
+    background: #756aee;
+    border-color: #151515;
+    color: #fff !important;
+    padding: 10px 30px 10px 30px;
+}
+.touchButton::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+}
+.journey-content{
+    padding:30px;
+    font-size:30px;
+    font-weight: 600;
+    color: #172b43;
+}
+.journey-container{
+    text-align: center;
+}
+.journey-container-top{
+    border-bottom: 1px solid gainsboro;
+}
+.journey-content.first{
+    border-right: 1px solid gainsboro;
+}
+.journeyCount{
+    font-size: 100px;
+}
+.journeyCountDesc{
+    margin-top:20px;
+}
+@media (max-width: 576px) {
+    .division{
+        display: inline-block;
+        float: none !important;
+    }
+    .footer-contact{
+        display: block;
+    }
+    .contact-page::before, .inner-page-about-us::before{
+        color: #f0f0f0;
+        top: 130px;
+        font-size: 80px;
+        font-weight: 700;
+    }
+    .inner-page-about-us::before {
+        top: 1320;
+    }
+    .quote-text{
+        font-weight: 500;
+        color:#000 !important;
+    }
+    .yearExperience{
+        font-size:40px;
+        font-weight:600;
+        margin-top:150px;
+    }
+    .yearExperience::before{
+        font-size:40px;
+        font-weight:600;
+        margin-top:160px;
+    }
+    .about-us .banner-content{
+        padding: 10rem 0 6rem !important;
+    }
+    .about-us .section-padding{
+        padding: 0rem 96px 3.5rem !important;
+    }
+ }
+ @media (min-width: 1290px){
+    .journeyCountDesc{
+        margin-top: 40px;
+    }
+ }

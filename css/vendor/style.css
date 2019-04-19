@@ -1,0 +1,46 @@
+/* -- Imported Fonts
+-------------------------------------- -- */
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:200,300,300i,400,400i,500,500i,600,700,800,900|Hind+Vadodara:300,400,500,600,700");
+
+.customer-satisfaction{
+	/*border:1px solid black; 
+	background-color:#E99B98; 
+	*/
+	background-image: -webkit-linear-gradient(45deg, #e9a17b, #ff7cb0);
+	background-image: -o-linear-gradient(45deg, #e9a17b, #ff7cb0);
+	background-image: linear-gradient(45deg, #e9a17b, #ff7cb0);
+	background-repeat: repeat-x;
+}
+.choose-us{
+	color:#ffffff;
+	padding-top: 20px;
+}
+.banner-contents{
+	padding: 280px 0 250px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

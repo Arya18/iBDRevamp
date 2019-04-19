@@ -1,0 +1,114 @@
+﻿<script type="text/javascript" src="js/header.js"></script>
+<script type="text/javascript" src="js/footer.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.6.1/css-doodle.min.js"></script>
+<div id="header"></div>
+<div class="container about-us">
+    <css-doodle grid="5" class="doodle">
+        :doodle { @grid: 11 / 100vmax; } background: @pick(#29B6F6, #FDD835, #5E35B1, #FFCCBC, #E8EAF6, #B2DFDB, #1B5E20, #2979FF);
+        opacity: @r(.9); clip-path: polygon( @rand(50%) 0, 50% @rand(70%), 0 @rand(100%) ); animation: test infinite @r(400s,
+        500s) linear; @keyframes test { 0% { transform: translate3d(0, 0, 0); } 50% { transform: translate3d(@r(-500%, 1000%),
+        @r(-500%, 1000%), 0); } 100% { transform: translate3d(0, 0, 0); } }
+    </css-doodle>
+    <div class="banner-content">
+        <h1 class="text-center about-us-heading">About Us</h1>
+    </div>
+    <section class="about-us section-padding inner-page-about-us">
+        <div class="row">
+            <div class="col-md-3 col-sm-12 col-xs-12" id="counter">
+                <span data-count="5" class="counter-value" onmouseover="bigImg(this)">0</span>
+            </div>
+            <div class="col-md-3 col-sm-12 col-xs-12">
+                <h4 class="yearExperience">Years of experience</h4>
+                <p>
+                    <b>Jo man chahe wo likho yaha mast jhamajham</b>
+                </p>
+                <p>
+                    <a class="touchButton">Get in Touch</a>
+                </p>
+            </div>
+            <div class="col-md-6 journey">
+                <div class="row journey-container-top">
+                    <div class="col-sm-6 journey-content first">
+                        <span class="journeyCount">50</span>
+                        <p class="journeyCountDesc">
+                            <b>Apps Developed</b>
+                        </p>
+                    </div>
+                    <div class="col-sm-6 journey-content">
+                        <span class="journeyCount">100+</span>
+                        <p class="journeyCountDesc">
+                            <b>Worldwide customers</b>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 journey-content first">
+                        <span class="journeyCount">36</span>
+                        <p class="journeyCountDesc">
+                            <b>client ki tension</b>
+                        </p>
+                    </div>
+                    <div class="col-sm-6 journey-content">
+                        <span class="journeyCount">4</span>
+                        <p class="journeyCountDesc">
+                            <b>paise dene nahin hai</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-padding about-us-get-quote">
+            <h4 class="quote-text container text-center">Want to hear from you !
+                <span>Let's Talk</span>
+            </h4>
+    </section>
+    <!-- End of .banner-content -->
+</div>
+<div id="footer"></div>
+<div id="quoteModal"></div>
+<!-- Javascripts
+    ======================================= -->
+
+<script> 
+    $(function () {
+        $("#header").load("header.html");
+        $("#quoteModal").load("quoteModal.html");
+        $("#footer").load("footer.html");
+    });
+    bigImg = () => {
+        console.log("ajsdnhfjk");
+    }
+
+    var a = 0;
+    $(window).scroll(function () {
+
+        var oTop = $('#counter').offset().top - window.innerHeight;
+        if (a == 0 && $(window).scrollTop() > oTop) {
+            $('.counter-value').each(function () {
+                var $this = $(this),
+                    countTo = $this.attr('data-count');
+                $({
+                    countNum: $this.text()
+                }).animate({
+                    countNum: countTo
+                },
+                    {
+
+                        duration: 800,
+                        easing: 'swing',
+                        step: function () {
+                            $this.text(Math.floor(this.countNum));
+                        },
+                        complete: function () {
+                            $this.text(this.countNum);
+                        }
+                    });
+            });
+            a = 1;
+        }
+    });
+</script>
+</body>
+
+</html>
